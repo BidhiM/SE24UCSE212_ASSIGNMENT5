@@ -34,6 +34,7 @@ Heuristic AlphaBeta Move: 2
 MCTS Move: 2  
 
 # 2. AI-Based Travel Planner using Ontology  
+# The respective file for protege is goa.owl and the python file is main.py
 # Tools  
 Protégé  
 Python  
