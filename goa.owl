@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-9 "http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;hasActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#hasHotel -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;hasHotel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#hasInterest -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;hasInterest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#recommendedFor -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;recommendedFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#cost -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;cost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#duration -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;duration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#rating -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;rating"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Activity -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Destination -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Destination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Hotel -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Hotel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Interests -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Interests"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#User -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Adventure -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Adventure">
+        <rdf:type rdf:resource="&untitled-ontology-9;Interests"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#BeachVisit -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;BeachVisit">
+        <rdf:type rdf:resource="&untitled-ontology-9;Activity"/>
+        <recommendedFor rdf:resource="&untitled-ontology-9;Nature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#FortTour -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;FortTour">
+        <rdf:type rdf:resource="&untitled-ontology-9;Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Goa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Goa">
+        <rdf:type rdf:resource="&untitled-ontology-9;Destination"/>
+        <hasActivity rdf:resource="&untitled-ontology-9;BeachVisit"/>
+        <hasActivity rdf:resource="&untitled-ontology-9;ScubaDiving"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#History -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;History">
+        <rdf:type rdf:resource="&untitled-ontology-9;Interests"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Jaipur -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Jaipur">
+        <rdf:type rdf:resource="&untitled-ontology-9;Destination"/>
+        <hasActivity rdf:resource="&untitled-ontology-9;FortTour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Manali -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Manali">
+        <rdf:type rdf:resource="&untitled-ontology-9;Destination"/>
+        <hasActivity rdf:resource="&untitled-ontology-9;Trekking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Nature -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Nature">
+        <rdf:type rdf:resource="&untitled-ontology-9;Interests"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#ScubaDiving -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;ScubaDiving">
+        <rdf:type rdf:resource="&untitled-ontology-9;Activity"/>
+        <recommendedFor rdf:resource="&untitled-ontology-9;Adventure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bidhi/ontologies/2026/4/untitled-ontology-9#Trekking -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Trekking">
+        <rdf:type rdf:resource="&untitled-ontology-9;Activity"/>
+        <recommendedFor rdf:resource="&untitled-ontology-9;Adventure"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
